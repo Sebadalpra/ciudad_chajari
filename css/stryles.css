@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* HEADER PAGINA PRINCIPAL */
+.main-header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.645), rgba(0, 0, 0, 0.645)), url(../recursos/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* HEADER PAGINAS SECUNDARIAS */
+.header {
+    background-color: #1572A1;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 6%;
+    align-items: center;
+}
+
+.nav__logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+.nav__links {
+    display: flex;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.titulos__locacion {
+    height: 80px;
+}
+
+.titulos__h1 {
+    font-size: 8em;
+    color: #ffffff;
+    font-weight: 700px;
+}
+
+.titulos__subtitulo {
+    color: #ffffff;
+}
+
+.titulos__boton {
+    margin: 30px;
+    width: 160px;
+    height: 40px;
+    background-color: #4E944F;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.redes-sociales {
+    display: flex;
+    size: 20px;
+}
+
+.redes-sociales__link {
+    display: flex;
+    margin: 0 26px;
+}
+
+.footer_p {
+    color: #fff;
+}
+
+/* PÁGINA: "CIUDAD */
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    padding: .8em .4em;
+}
+
+.parrafo {
+    margin: 2rem;
+}
+
+.galeria {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 50%);
+    grid-template-rows: repeat(3, 50%);
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img4 img4"
+        "img5 img6 img7";
+    gap: 20px;
+
+    padding-bottom: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 30px;
+}
+
+.galeria__pic-g4 {
+    grid-area: img4;
+}
+
+.galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+
+/* PAGINA: "TERMAS/CAMPING" */
+
+/* TERMAS */
+.main-termascamping {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 175vh;
+    background-color: #eaeaee;
+}
+
+.titulo__termas-camping {
+    padding-top: 30px;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.tarjetas__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tarjetas__div {
+    width: 340px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 2rem;
+    text-align: center;
+}
+
+.tarjetas__div:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.termas__img {
+    width: 330px;
+    height: 220px;
+}
+
+.termas__h2 {
+    text-align: center;
+    margin-top: 60px;
+    font-weight: 100;
+}
+
+.termas__descripcion {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* CAMPING */
+.seccion__camping {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo__camping {
+    display: flex;
+    margin: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.tarjetas__camping {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tarjetas__div-camping {
+    display: flex;
+
+    flex-direction: column;
+
+    background-image: url(../recursos/camping2.jpg);
+    background-position: center;
+
+    width: 80%;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    cursor: default;
+    padding: 30px;
+    text-align: left;
+    justify-content: end;
+}
+
+.tarjetas__div-camping:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.camping__descripcion {
+    color: #eaeaee;
+
+}
+
+.tarjetas__h4 {
+    color: #fff;
+}
+
+/* PÁGINA: "EVENTOS */
+.main__container {
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100% 100% 25rem;
+    grid-template-areas: 
+    "img img img"
+    "seccion seccion seccion"
+    "img2 img2 img2";
+}
+.imagen__aniversario {
+    grid-area: img;
+}
+.img__aniversario {
+    width: 100%;
+}
+.seccion__aniversario {
+    grid-area: seccion;
+}
+.img__lospalmeras {
+    grid-area: img2;
+    grid-column: 2/3;
+}
+
+
+/*PÁGINA: "CONTACTANOS" */
+
+.formularios {
+    display: grid;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+
+    background-image: url(../recursos/degradado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.formularios__div {
+    border: solid 3px;
+    height: 100%;
+    background-color: #eaeaee;
+
+}
+
+.formularios__div:hover {
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.formularios__seccion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem;
+}
+
+label {
+    padding: 5px;
+    background-color: #eaeaee;
+}
+
+.contactanos {
+    text-align: center;
+    margin: 30px;
+}
+
+textarea {
+    width: 70%;
+}
+
+.formularios__btn {
+    height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.formularios__boton {
+    height: 30px;
+    width: 30%;
+}
+
+/* TABLET */
+@media (min-width: 541px) and (max-width: 810px) {
+    /* HEADER */
+    .nav__links {
+        display:list-item;
+    }
+    
+    .titulos__h1 {
+        font-size: 5em;
+        font-weight: 500px;
+    }
+}
+
+/* CELULAR */
+@media (min-width: 320px) and (max-width: 540px) {
+    /* GENERAL */
+    .titulo {
+        font-size: 2rem;
+    }
+
+    /* HEADER */
+    .nav__links {
+        display:list-item;
+    }
+
+    .titulos__h1 {
+        font-size: 4em;
+        font-weight: 350px;
+    }
+    /* PÁGINA: CIUDAD */
+    .galeria {
+        grid-template-columns: 100%;
+        grid-template-rows: 50%;
+        padding-left: 0px;
+        padding-right: 0px;
+        grid-template-areas:
+        "img1"
+        "img2" 
+        "img3"
+        "img4"
+        "img5" 
+        "img6" 
+        "img7";
+    }
+    /* PÁGINA: EVENTOS */
+    .main__eventos{
+    grid-template-columns: 100%;
+    grid-template-rows: 100vh 70vh 25rem;
+    grid-template-areas: 
+    "img"
+    "seccion"
+    "img2";
+}
+.img__lospalmeras {
+    margin: auto;
+    grid-column: 1/4;
+}
+.img__section {
+    width: 100%;
+}
+    
+}
