@@ -305,16 +305,14 @@ footer {
     padding-bottom: 2rem;
     justify-content: center;
 
-    background-image: url(../recursos/degradado.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(20deg, #1CB5E0 0%, #000851 100%);
+    
 }
 
 .formularios__div {
     border: solid 3px;
     height: 100%;
     background-color: #eaeaee;
-
 }
 
 .formularios__div:hover {
