@@ -268,55 +268,22 @@ footer {
 /*PÁGINA: "CONTACTANOS" */
 
 .formularios {
-    display: grid;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    justify-content: center;
-
-    background: linear-gradient(20deg, #1CB5E0 0%, #000851 100%);
-    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(20deg, #1CB5E0 0%, #000851 100%);   
 }
 
 .formularios__div {
-    border: solid 3px;
-    height: 100%;
     background-color: #eaeaee;
+    padding: 3rem;
+}
+
+input, label, textarea {
+    padding: .75rem;
 }
 
 .formularios__div:hover {
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.formularios__seccion {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 3rem;
-}
-
-label {
-    padding: 5px;
-    background-color: #eaeaee;
-}
-
-.contactanos {
-    text-align: center;
-    margin: 30px;
-}
-
-textarea {
-    width: 70%;
-}
-
-.formularios__btn {
-    height: 40px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.formularios__boton {
-    height: 30px;
-    width: 30%;
 }
 
 /* TABLET */
