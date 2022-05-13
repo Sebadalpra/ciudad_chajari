@@ -6,6 +6,12 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+/* GENERALES */
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    padding: .8em .4em;
+}
 
 /* HEADER PAGINA PRINCIPAL */
 .main-header {
@@ -54,7 +60,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 5rem;
 }
 
 .titulos__locacion {
@@ -71,13 +77,8 @@ nav ul li a {
     color: #ffffff;
 }
 
-.titulos__boton {
-    margin: 30px;
-    width: 160px;
-    height: 40px;
-    background-color: #4E944F;
-    border-radius: 30px;
-    cursor: pointer;
+.btn-outline-light {
+    margin: 2rem;
 }
 
 footer {
@@ -105,15 +106,6 @@ footer {
 }
 
 /* PÁGINA: "CIUDAD */
-.titulo {
-    text-align: center;
-    font-size: 3rem;
-    padding: .8em .4em;
-}
-
-.parrafo {
-    margin: 2rem;
-}
 
 .galeria {
     display: grid;
@@ -268,34 +260,10 @@ footer {
 }
 
 /* PÁGINA: "EVENTOS */
-.main__container {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100vh 55vh 25rem;
-    grid-template-areas:
-        "img img img"
-        "seccion seccion seccion"
-        "img2 img2 img2";
-}
 
-.imagen__aniversario {
-    grid-area: img;
+.palmeras {
+    margin: 2rem;
 }
-
-.img__aniversario {
-    width: 100%;
-}
-
-.seccion__aniversario {
-    grid-area: seccion;
-}
-
-.img__lospalmeras {
-    grid-area: img2;
-    grid-column: 2/3;
-}
-
 
 /*PÁGINA: "CONTACTANOS" */
 
@@ -399,23 +367,5 @@ textarea {
             "img7";
     }
 
-    /* PÁGINA: EVENTOS */
-    .main__container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "img "
-            "seccion"
-            "img2";
-    }
-
-    .img__lospalmeras {
-    margin: auto;
-    grid-column: 1/4;
-}
-
-    .img__section {
-    width: 100%;
-}
 
 }
