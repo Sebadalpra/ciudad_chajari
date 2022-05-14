@@ -26,33 +26,25 @@
 }
 
 /* HEADER PAGINAS SECUNDARIAS */
-.header {
-    background-color: #1572A1;
+.bg-header {
+    background-color: #1aa7ee;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 6%;
-    align-items: center;
-}
-
-.nav__logo {
-    width: 80px;
+.logo {
+    width: 4rem;
     cursor: pointer;
 }
 
-.nav__links {
-    display: flex;
+.collapse {
+    justify-content:end;
 }
 
-nav ul li {
-    margin: 10px 15px;
+.nav-link {
+    margin: .50rem;
 }
 
-nav ul li a {
+.letras-blancas {
     color: #ffffff;
-    font-size: 17px;
 }
 
 .titulos {
