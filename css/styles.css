@@ -260,31 +260,18 @@ footer {
 /*PÁGINA: "CONTACTANOS" */
 
 .formularios {
-<<<<<<< HEAD:css/styles.css
     padding-top: 3rem;
     padding-bottom: 3rem;
     background: linear-gradient(20deg, #1CB5E0 0%, #000851 100%);   
-=======
-    display: grid;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    justify-content: center;
-
-    background: linear-gradient(20deg, #1CB5E0 0%, #000851 100%);
-    
->>>>>>> 1b41e51f797f933deeac3a39045bceba759cb40d:css/stryles.css
 }
 
 .formularios__div {
     background-color: #eaeaee;
-<<<<<<< HEAD:css/styles.css
     padding: 3rem;
 }
 
 input, label, textarea {
     padding: .75rem;
-=======
->>>>>>> 1b41e51f797f933deeac3a39045bceba759cb40d:css/stryles.css
 }
 
 .formularios__div:hover {
