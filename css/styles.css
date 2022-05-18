@@ -6,14 +6,37 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-/* GENERALES */
+/* GENERALES PARA TODAS LAS PÁGINAS */
 .titulo {
     text-align: center;
     font-size: 3rem;
     padding: .8em .4em;
 }
 
-/* HEADER PAGINA PRINCIPAL */
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.redes-sociales {
+    display: flex;
+}
+
+.redes-sociales__link {
+    display: flex;
+    margin: 0 26px;
+}
+
+.footer_p {
+    color: #fff;
+}
+
+/* HEADER PÁGINA PRINCIPAL */
 .main-header {
     display: flex;
     flex-direction: column;
@@ -25,7 +48,7 @@
     position: relative;
 }
 
-/* HEADER PAGINAS SECUNDARIAS */
+/* HEADER PÁGINAS SECUNDARIAS */
 .bg-header {
     background-color: #023c59;
 }
@@ -71,30 +94,6 @@
 
 .btn-outline-light {
     margin: 2rem;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    align-items: center;
-    position: relative;
-    justify-content: flex-end;
-}
-
-.redes-sociales {
-    display: flex;
-    size: 20px;
-}
-
-.redes-sociales__link {
-    display: flex;
-    margin: 0 26px;
-}
-
-.footer_p {
-    color: #fff;
 }
 
 /* PÁGINA: "CIUDAD */
@@ -279,7 +278,7 @@ input, label, textarea {
 }
 
 /* TABLET */
-@media (min-width: 541px) and (max-width: 810px) {
+@media screen and (min-width: 541px) and (max-width: 810px) {
 
     /* HEADER */
 
@@ -290,7 +289,7 @@ input, label, textarea {
 }
 
 /* CELULAR */
-@media (min-width: 320px) and (max-width: 540px) {
+@media screen and (min-width: 320px) and (max-width: 540px) {
 
     /* GENERAL */
     .titulo {
