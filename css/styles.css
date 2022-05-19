@@ -1,339 +1,254 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-/* GENERALES PARA TODAS LAS PÁGINAS */
-.titulo {
-    text-align: center;
-    font-size: 3rem;
-    padding: .8em .4em;
-}
+@charset "UTF-8";
+/* HEADER PROPIEDADES GENERALES */
+.logo {
+  width: 4rem;
+  cursor: pointer; }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(0, 0, 0);
-    text-align: center;
-    align-items: center;
-    position: relative;
-    justify-content: flex-end;
-}
+.collapse {
+  justify-content: end; }
 
-.redes-sociales {
-    display: flex;
-}
+.nav-link {
+  margin: .50rem; }
 
-.redes-sociales__link {
-    display: flex;
-    margin: 0 26px;
-}
-
-.footer_p {
-    color: #fff;
-}
-
-/* HEADER PÁGINA PRINCIPAL */
-.main-header {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.645), rgba(0, 0, 0, 0.645)), url(../recursos/header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
+.nav-letras {
+  color: #fff; }
 
 /* HEADER PÁGINAS SECUNDARIAS */
 .bg-header {
-    background-color: #023c59;
-}
+  background-color: #023c59; }
 
-.logo {
-    width: 4rem;
-    cursor: pointer;
-}
-
-.collapse {
-    justify-content:end;
-}
-
-.nav-link {
-    margin: .50rem;
-}
-
-.letras-blancas {
-    color: #ffffff;
-}
-
-.titulos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-}
-
-.titulos__locacion {
-    height: 80px;
-}
-
-.titulos__h1 {
-    font-size: 8em;
-    color: #ffffff;
-    font-weight: 700px;
-}
-
-.titulos__subtitulo {
-    color: #ffffff;
-}
-
-.btn-outline-light {
-    margin: 2rem;
-}
-
-/* PÁGINA: "CIUDAD */
-
-.galeria {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 50%);
-    grid-template-rows: repeat(3, 50vh);
-    grid-template-areas:
-        "img1 img2 img3"
-        "img4 img4 img4"
-        "img5 img6 img7";
-    gap: 20px;
-    padding-bottom: 20px;
-    padding-left: 25%;
-    padding-right: 25%;
-    padding-top: 30px;
-}
-
-.galeria__pic-g4 {
-    grid-area: img4;
-}
-
-.galeria__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.galeria__img:hover {
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.8);
-}
-
-.mapa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-
-
-/* PAGINA: "TERMAS/CAMPING" */
-
-/* TERMAS */
-.main-termascamping {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    min-height: 175vh;
-    background-color: #eaeaee;
-}
-
-.titulo__termas-camping {
-    padding-top: 30px;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.parrafo__termas-camping {
-    margin-left: 5rem;
-    margin-right: 5rem;
-}
-
-.tarjetas__container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.tarjetas__div {
-    width: 340px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 2rem;
-    text-align: center;
-}
-
-.tarjetas__div:hover {
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.termas__img {
-    width: 330px;
-    height: 220px;
-}
-
-.termas__h2 {
-    text-align: center;
-    margin-top: 60px;
-    font-weight: 100;
-}
-
-.termas__descripcion {
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-/* CAMPING */
-.seccion__camping {
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo__camping {
-    display: flex;
-    margin: 100%;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 30px;
-}
-
-.tarjetas__camping {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.tarjetas__div-camping {
-    display: flex;
-
-    flex-direction: column;
-
-    background-image: url(../recursos/camping2.jpg);
-    background-position: center;
-
-    width: 80%;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 20px;
-    cursor: default;
-    padding: 30px;
-    text-align: left;
-    justify-content: end;
-}
-
-.tarjetas__div-camping:hover {
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-
-.camping__descripcion {
-    color: #eaeaee;
-
-}
-
-.tarjetas__h4 {
-    color: #fff;
-}
-
-/* PÁGINA: "EVENTOS */
-
-.palmeras {
-    margin: 2rem;
-}
-
-/*PÁGINA: "CONTACTANOS" */
-
-.formularios {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background: linear-gradient(20deg, #1CB5E0 0%, #000851 100%);   
-}
-
-.formularios__div {
-    background-color: #eaeaee;
-    padding: 3rem;
-}
-
-input, label, textarea {
-    padding: .75rem;
-}
-
-.formularios__div:hover {
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end; }
+  footer__redes-sociales {
+    display: flex; }
+    footer__redes-sociales__link {
+      display: flex;
+      margin: 0 26px; }
+  footer .footer--p {
+    color: #fff; }
 
 /* TABLET */
 @media screen and (min-width: 541px) and (max-width: 810px) {
-
-    /* HEADER */
-
-    .titulos__h1 {
-        font-size: 5em;
-        font-weight: 500px;
-    }
-}
+  /* HEADER */
+  .titulos__h1 {
+    font-size: 5em;
+    font-weight: 500px; } }
 
 /* CELULAR */
 @media screen and (min-width: 320px) and (max-width: 540px) {
+  /* GENERAL */
+  .titulo {
+    font-size: 2.5rem; }
+  /* HEADER */
+  .nav__links {
+    display: list-item; }
+  .titulos__h1 {
+    font-size: 5rem;
+    font-weight: 350px; }
+  /* PÁGINA: CIUDAD */
+  .galeria {
+    grid-template-columns: 100%;
+    grid-template-rows: 50vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7"; }
+  /* PÁGINA: TERMAS / CAMPING */
+  .parrafo__termas-camping {
+    margin: 1rem; } }
 
-    /* GENERAL */
-    .titulo {
-        font-size: 2.5rem;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
 
-    /* HEADER */
-    .nav__links {
-        display: list-item;
-    }
+/* GENERALES PARA TODAS LAS PÁGINAS */
+.titulo {
+  text-align: center;
+  font-size: 3rem;
+  padding: .8em .4em; }
 
-    .titulos__h1 {
-        font-size: 5rem;
-        font-weight: 350px;
-    }
+.titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  .titulos__locacion {
+    height: 80px; }
+  .titulos__h1 {
+    font-size: 8em;
+    color: #fff;
+    font-weight: 700px; }
+  .titulos__subtitulo {
+    color: #fff; }
 
-    /* PÁGINA: CIUDAD */
-    .galeria {
-        grid-template-columns: 100%;
-        grid-template-rows: 50vh;
-        padding-left: 0px;
-        padding-right: 0px;
-        grid-template-areas:
-            "img1"
-            "img2"
-            "img3"
-            "img4"
-            "img5"
-            "img6"
-            "img7";
-    }
+.btn-outline-light {
+  margin: 2rem; }
 
-    /* PÁGINA: TERMAS / CAMPING */
-    .parrafo__termas-camping {
-        margin: 1rem;
-    }
+/* INDEX */
+.main-header {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.645), rgba(0, 0, 0, 0.645)), url(../recursos/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
 
-}
+/* PÁGINA: "CIUDAD */
+.galeria {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 50%);
+  grid-template-rows: repeat(3, 50vh);
+  grid-template-areas: "img1 img2 img3" "img4 img4 img4" "img5 img6 img7";
+  gap: 20px;
+  padding-bottom: 20px;
+  padding-left: 25%;
+  padding-right: 25%;
+  padding-top: 30px; }
+  .galeria__pic-g4 {
+    grid-area: img4; }
+  .galeria__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+    .galeria__img:hover {
+      box-shadow: 0 12px 16px rgba(0, 0, 0, 0.8); }
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; }
+
+/* PAGINA: "TERMAS/CAMPING" */
+/* TERMAS */
+.main-termascamping {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 175vh;
+  background-color: #eaeaee; }
+
+.titulo__termas-camping {
+  padding-top: 30px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.parrafo__termas-camping {
+  margin-left: 5rem;
+  margin-right: 5rem; }
+
+.tarjetas__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  flex-direction: row;
+  justify-content: center; }
+
+.tarjetas__div {
+  width: 340px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 2rem;
+  text-align: center; }
+
+.tarjetas__div:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.termas__img {
+  width: 330px;
+  height: 220px; }
+
+.termas__h2 {
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 100; }
+
+.termas__descripcion {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 300; }
+
+/* CAMPING */
+.seccion__camping {
+  display: flex;
+  flex-direction: column; }
+
+.titulo__camping {
+  display: flex;
+  margin: 100%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 30px; }
+
+.tarjetas__camping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+
+.tarjetas__div-camping {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../recursos/camping2.jpg);
+  background-position: center;
+  width: 80%;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  cursor: default;
+  padding: 30px;
+  text-align: left;
+  justify-content: end; }
+
+.tarjetas__div-camping:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.camping__descripcion {
+  color: #eaeaee; }
+
+.tarjetas__h4 {
+  color: #fff; }
+
+/* PÁGINA: "EVENTOS */
+.palmeras {
+  margin: 2rem; }
+
+/*PÁGINA: "CONTACTANOS" */
+.formularios {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: linear-gradient(20deg, #1CB5E0 0%, #023c59 100%); }
+
+.formularios__div {
+  background-color: #eaeaee;
+  padding: 3rem; }
+
+input, label, textarea {
+  padding: .75rem; }
+
+.formularios__div:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }

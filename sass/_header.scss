@@ -1,0 +1,22 @@
+/* HEADER PROPIEDADES GENERALES */
+.logo {
+    width: 4rem;
+    cursor: pointer;
+}
+
+.collapse {
+    justify-content:end;
+}
+
+.nav-link {
+    margin: .50rem;
+}
+
+.nav-letras {
+    color: $color-titulos-principales;
+}
+
+/* HEADER PÁGINAS SECUNDARIAS */
+.bg-header {
+    background-color: $color-principal;
+}

@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+        &__redes-sociales{
+            display: flex;
+            &__link {
+            display: flex;
+            margin: 0 26px;
+            }
+        }
+        .footer--p {
+            color: $color-titulos-principales;
+        }
+}
