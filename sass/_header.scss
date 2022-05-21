@@ -12,11 +12,7 @@
     margin: .50rem;
 }
 
-.nav-letras {
-    color: $color-titulos-principales;
-}
-
 /* HEADER PÁGINAS SECUNDARIAS */
 .bg-header {
-    background-color: $color-principal;
+    background: linear-gradient(20deg, $color-secundario 0%, $color-principal 100%);
 }
