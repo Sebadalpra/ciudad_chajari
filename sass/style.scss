@@ -21,6 +21,8 @@
     @include titulo();
 }
 
+/* INDEX */
+
 .titulos {
     display: flex;
     flex-direction: column;
@@ -28,7 +30,7 @@
     align-items: center;
     padding: 2rem;
         &__locacion {
-            height: 80px;
+            height: 5rem;
         }
         &__h1 {
             font-size: 8em;
@@ -38,9 +40,14 @@
         &__subtitulo {
             color: $color-titulos-principales;
         }
+        &__button {
+            padding-right: 2rem;
+        }
+        .btn-outline-light {
+            margin: 2rem;
+        }
 }
 
-/* INDEX */
 .main-header {
     display: flex;
     flex-direction: column;
@@ -52,9 +59,6 @@
     position: relative;
 }
 
-.btn-outline-light {
-    margin: 2rem;
-}
 
 /* PÁGINA: "CIUDAD */
 
@@ -203,8 +207,8 @@
 /*PÁGINA: "CONTACTANOS" */
 
 .formularios {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     background: linear-gradient(20deg, $color-secundario 0%, $color-principal 100%);
     &__div {
         background-color: $color-terciario;
