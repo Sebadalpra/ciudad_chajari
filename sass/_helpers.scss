@@ -1,0 +1,12 @@
+@mixin titulo {
+    text-align: center;
+    font-size: $font-size-titulos-principales;
+    padding: .8em .4em;
+}
+@mixin tarjetas {
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    cursor: pointer;
+}
